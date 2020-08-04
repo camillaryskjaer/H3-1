@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCocktails.Web", "EFCocktails.Web\EFCocktails.Web.csproj", "{DF7ABAAA-767E-4DD3-832D-DFF34EC0DCF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCocktailsDataAccessLibrary", "EFCocktailsDataAccessLibrary\EFCocktailsDataAccessLibrary.csproj", "{0187AB24-B157-4407-B136-D83140DBF1AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF7ABAAA-767E-4DD3-832D-DFF34EC0DCF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF7ABAAA-767E-4DD3-832D-DFF34EC0DCF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF7ABAAA-767E-4DD3-832D-DFF34EC0DCF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF7ABAAA-767E-4DD3-832D-DFF34EC0DCF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0187AB24-B157-4407-B136-D83140DBF1AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0187AB24-B157-4407-B136-D83140DBF1AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0187AB24-B157-4407-B136-D83140DBF1AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0187AB24-B157-4407-B136-D83140DBF1AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DB4E9DD-4C96-43F1-A6DE-208A805232CC}
+	EndGlobalSection
+EndGlobal
