@@ -52,6 +52,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\DrinksContext.cs" />
+    <Compile Include="DrinkRepository.cs" />
+    <Compile Include="IDrinkRepository.cs" />
+    <Compile Include="Migrations\202008042052040_InitialDBCreation.cs" />
+    <Compile Include="Migrations\202008042052040_InitialDBCreation.designer.cs">
+      <DependentUpon>202008042052040_InitialDBCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Alcohol.cs" />
     <Compile Include="Models\Drink.cs" />
     <Compile Include="Models\Enum\GlassType.cs" />
@@ -60,7 +67,11 @@
     <Compile Include="Models\Liquid.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202008042052040_InitialDBCreation.resx">
+      <DependentUpon>202008042052040_InitialDBCreation.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

@@ -10,9 +10,9 @@ namespace DrinksDataAccess.DataAccess
 {
     public class DrinksContext : DbContext
     {
-        public DrinksContext() : base()
+        static string connectionString = "Data Source=.;Initial Catalog=EFDataDB;Integrated Security=true;";
+        public DrinksContext() : base(connectionString)
         {
-            
         }
 
         public DbSet<Drink> Drinks { get; set; }
