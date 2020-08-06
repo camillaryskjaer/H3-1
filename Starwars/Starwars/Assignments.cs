@@ -14,13 +14,20 @@ namespace Starwars
             _planets = planets;
         }
 
+        //Her kunne man godt argumentere for at bruge ToLower, så man fik "stavefejls" planeter med :)
         public List<string> Opgave1()
             => _planets
                 .Select(p => p.Name)
+            
                 .Where(n => n.StartsWith("M"))
                 .ToList();
         
         public List<string> Opgave2()
+            //Kan gøres nemmere 
+            => _planets.Where(p => p.Name.ToLower().Contains("y"))
+            
+            
+            
             => _planets.Where(p => p.Name.Contains("y") || p.Name.Contains("Y"))
                 .Select(p => p.Name)
                 .ToList();
@@ -60,6 +67,8 @@ namespace Starwars
 
         public List<string> Opgave8()
             => _planets
+            //For læsevenlighedens skyld, er det en god ide at indkapsle udtryk i paranteser
+          
                 .Where(p => p.RotationPeriod < 30 && p.Name.Contains("ba")|| p.SurfaceWater > 50 && p.Name.Contains("ba"))
                 .OrderBy(p => p.Name)
                 .ThenBy(p => p.SurfaceWater)
@@ -80,6 +89,14 @@ namespace Starwars
             var areas = CalculatePlanetArea(planets);
             var result = new List<string>();
             result.Add("Jeg giver op! xD");
+            //Det gør jeg også nogle gange :)
+            
+            //Hvad med 
+            var planets = _planets.Where(p => p.Diameter > 0 && p.Population > 0).OrderBy(p => (4 * Math.PI * Math.Pow(p.Diameter / 2, 2)) / p.Population);
+         
+            
+            
+            
             return result;
         }
 
